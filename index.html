@@ -1,6 +1,12 @@
 ---
 layout: default
-title: Will
+title: Index Page html
 ---
 
-Welcome!
+Welcome! This is the root index page
+
+{% for posts in site.posts limit:5 %}
+<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+{{ post.content }}
+<em>Posted on {{ post.date | date_to_long_string }}.</em>
+{% endfor %}
