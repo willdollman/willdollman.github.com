@@ -1,0 +1,17 @@
+---
+layout: post
+title: The keyboard in Windows, Mac and Linux
+---
+
+### What point do I want to get across in this post? ###
+1.  Difference between modifer keys on windows and os x - and maybe some quick pros and cons of each
+2.  My solution - remapping Caps lock to ctrl and cmd resepctively, and how to do it on each system
+3.  Caveats
+4.  Keyboard layout - characters like @ and ". My preference, then how to switch it up. Whatever you'll use the most is best.
+5.  The fewer things you have to tweak the better...
+
+I use OS X at home and Windows at work (and develop in Linux VMs, but that's a whole seperate thing). The biggest irritation in this festival of operating systems is the differences in keyboard shortcuts between the two. Let's start with keyboard shortcuts.
+
+On Windows, the primary keyboard shortcut key is Ctrl. This is (usually) the leftmost, bottommost key on a keyboard and is ideally placed for shortcuts like Ctrl-C and Ctrl-V - copy and paste. By contrast, in OS X the primary modifier key is cmd, just to the left of the spacebar. Rather than being prodded with the pinkie finger, the natural finger to hit cmd is the thumb, which seems unusual if you're coming from a lifetime of Windows. It's not quite so well-placed for the cmd-z,x,c,v combo area, but is far better for other shortcut keys that I find myself as much, if not more frequently. It's a stronger digit too, far more so than a litle finger. It's different - cmd-t involves a relatively comfortable thumb fold-under, while ctrl-t involves a certain contortion. 
+
+In OS X, the primary keyboard shortcut key is the cmd button, just to the left of the space bar. 
