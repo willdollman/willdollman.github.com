@@ -1,0 +1,33 @@
+---
+layout: post
+title: unRAID on a Microserver
+---
+
+I have an HP N40L microserver, and I've been looking around for a while now at ways of turning it into a network storage device device that won't lose my data if a disk dies. There are a couple of solutions that normally get brought out at this point. 
+
+RAID 5 is a poor fit for home use. It's complicated enough that the risk of losing data is higher than I'd like, and it needs extra hardware. In addition, lose two drives and you'll find the remains of your data smeared across your surviving disks.
+ZFS is promising, but its lack of support on Linux killed it for me. The nicest way to get it is FreeNAS, but Wake on LAN doesn't work with it, and I'd prefer to stick with Linux. Also, ZFS's RAM requirements are pretty high - recommended around 1GB per terabyte of storage.
+
+Enter unRAID. You have a bunch of disks, and use the largest as a parity disk. Lose one drive and you can rebuild. Lose two and yes, you lose the data on both of them, but critically **not** everything else as well. There are some disadvantages to such a high level approach (rather than at the hardware or filesystem level), and I wouldn't use it in an industry situation, but it covers exactly what I want. It does cost money to use with more than three disks, and the driver that provides the parity isn't open source.
+
+So that covers the motivation for it, but what about this post? I don't want to regurgitate the [unRAID wiki] [unraid-wiki] - the user-organised documentation is excellent, but I found it to be lacking in a *sensible defaults and sensible things to install* section. That's what I hope this is. Once you start using unRAID, you'll notice a couple of problems.
+* The stock web UI is ugly
+* Shutting down requires you to run a full parity-sync if you don't stop the array first
+* Adding disk to the array takes hours
+* Installing packages is a pain
+* And if you're using a microserver... wake on LAN doesn't work
+[unraid-wiki]: http://lime-technology.com/wiki/index.php/UnRAID_Wiki "unRAID wiki"
+
+The web UI problem is pretty easy to solve with a plugin called [SimpleFeatures] [simplefeatures-gcode]. 
+It changes the interface from the very basic stock style to this, as well as a handful of other features that integrate nicely into the web interface.
+<a href="/images/2013-03-19-unraid_simplefeatures.png"><img alt="SimpleFeatures interface" src="/images/2013-03-19-unraid_simplefeatures.png" style="display:block; margin-left:auto; margin-right:auto;" width="500"></a>
+[simplefeatures-gcode]: https://code.google.com/p/unraid-simplefeatures/
+
+Requiring a parity check after an abrupt power off is one of the higher level disadvantages I talked about. ReiserFS (the format of the data disks) is a [journaled file system] [journal-wiki], but the pairty drive is literally just an XOR of all the bits on the other drive. No file system, just bits. So if you just turn the power off, the parity disk may be inconsistent with the other disks and the ony real solution is to scrub over all the disks and check that it's not. What you should do is stop the array before taking the power down, and luckily there's a nice powerdown script that does this for you. I recommend linking this to **shutdown** so you don't accidentally power it off.
+[journal-wiki]: http://en.wikipedia.org/wiki/Journaling_file_system
+
+When you add a disk ot the array, it first writes zeroes to it and formats it. If it's a 2TB drive and you're wriing your zeros at 100MB/s, that's 5 hours, all the while the array is inaccessible. Unacceptable! What we need is a script that does that in the background. Usefully, someone's been there already. It takes longer to run than the standard preparation as it does a full read, write and then reads again - say about 5 hours per terabyte. It also does some SMART checking before and after, so it's a decent way to burn in new drives.
+
+Packages. unRAID is a stripped down Slackware distro that fits into 128MB, so understandable it's a bit light on packages. You can do it yourself, but UU provides a quick and dirty web interface to install common packages with unRAID customisations. Customisations? This is a live OS remember, so everything apart from */boot* gets thrown away when the power goes down. For example, if you install sshd, it also sets up a script to copy /etc/ssh/ into place on each boot.
+
+Wake on LAN with the N40L is a pain and doesn't work properly. The way to get it working with Linux is to take the network interface down before you switch it off, which keeps the interface listening for magic packets. I couldn't get it working in the 4.x releases, but the 5.0-rc12a release work great. Add */sbin/ifconfig eth0 down* to the powerdown script to have it bring the network interface when switching off.
