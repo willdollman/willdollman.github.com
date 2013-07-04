@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Lightroom with Apple's Photo Stream
+title: Sync your Lightroom photos to iOS with iCloud Photo Stream
 ---
 
 Photo Stream is a neat iOS feature. Every photo you take with your phone just appears on your computer.
