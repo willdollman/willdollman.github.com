@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Looking at iOS's background processes
+title: iOS - what happens in the background?
 ---
 
 One part of Android that I've always thought is missing from iOS is good battery monitoring. Yeah, partly I just like knowing what's going on, but it also gives you some visibility into battery problems. Phones have small batteries, so they get away with an all-day battery life because most of the time they're idle and almost everything is off. The flip side is that unlike a laptop, a wedged process running in the background means serious battery drain problems.
 
 <div class="img_wrap">
-  <img class="img_wide" style="height: 400px;" src="/images/20140404-ios_battery.png">
-  <img class="img_wide" style="height: 400px;" src="/images/20140404-android_battery.png">
+  <img class="img_high" src="/images/20140404-ios_battery.png">
+  <img class="img_high" src="/images/20140404-android_battery.png">
   <div class="img_text">To say Android is better equipped here would be an understatement</div>
 </div>
 
@@ -19,7 +19,7 @@ What doesn't seem to be well known is that there's a way to do this without jail
 In Instruments select iOS in the left panel, and the Energy Diagnostics template. To see what's happening on your phone, hit record. In addition to the standard tools - CPU usage, Network activity - you can see when apps enter and exit running states via the flags at the top of the timeline. For example, Weather wakes up for a few seconds every time you unlock the phone.
 
 <div class="img_wrap">
-  <img class="img_wide" style="height: 600px" src="/images/20140404-instruments_record.png">
+  <img class="img_wide dropshadow" style="height: 600px" src="/images/20140404-instruments_record.png">
 </div>
 
 More useful than just showing data when you're connected to your laptop is that you can record diagnostics, and later review them in Instruments. Setting your phone up to work with Instruments adds a Developer menu item in Settings. To view the data, reconnect your phone then go to File > Import Logged Data from Device in Instruments.
