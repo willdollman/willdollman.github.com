@@ -17,9 +17,9 @@ html, body {
 
 body {
   background-color: white;
-  font: 13.34px helvetica, arial, clean, sans-serif;
-  *font-size: small;
   text-align: center;
+  font-family: Georgia, serif;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,11 +79,10 @@ ul.posts {
 /*****************************************************************************/
 
 .site {
-  font-size: 110%;
   text-align: justify;
-  width: 40em;
-  margin: 3em auto 2em auto;
-  line-height: 1.5em;
+  width: 640px;
+  margin: 3em auto auto auto;
+  line-height: 1.7em;
 }
 
 .title {
@@ -153,6 +152,50 @@ ul.posts {
 }
 
   /* standard */
+
+  #post #title {
+    font-size: 27px;
+  }
+
+  #post .img_wrap {
+    width: 900px;
+    text-align: center;
+    margin-left: -130px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+
+  #post .img_high {
+      max-height: 400px;
+      max-width: 900px;
+      margin-left: 5px;
+      margin-right: 5px;
+      /* max-height: 500px; */
+  }
+
+  #post .img_wide {
+      max-height: 1000px;
+      max-width: 900px;
+      /* max-height: 500px; */
+  }
+
+  #post .img_text {
+    font-size: 80%;
+  }
+
+  /* Add to images with OS X-style drop shadows to remove excess spacing */
+  #post .dropshadow {
+      margin-top: -25px;
+      margin-bottom: -30px;
+  }
+
+  /* Inline pixel-doubled images */
+  /* Not ideal. Text reflow in browsers like Firefox treat images as if full size */
+  #post .img_halfsize {
+      zoom: 50%;
+      -moz-transform: scale(0.5);
+        -o-transform: scale(0.5);
+  }
 
   #post pre {
     border: 1px solid #ddd;
