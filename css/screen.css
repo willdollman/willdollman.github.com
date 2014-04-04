@@ -17,9 +17,9 @@ html, body {
 
 body {
   background-color: white;
-  font: 13.34px helvetica, arial, clean, sans-serif;
-  *font-size: small;
   text-align: center;
+  font-family: Georgia, serif;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,11 +79,10 @@ ul.posts {
 /*****************************************************************************/
 
 .site {
-  font-size: 110%;
   text-align: justify;
-  width: 40em;
-  margin: 3em auto 2em auto;
-  line-height: 1.5em;
+  width: 640px;
+  margin: 3em auto auto auto;
+  line-height: 1.7em;
 }
 
 .title {
@@ -153,6 +152,27 @@ ul.posts {
 }
 
   /* standard */
+
+  #post #title {
+    font-size: 27px;
+  }
+
+  #post .img_wrap {
+    width: 900px;
+    text-align: center;
+    margin-left: -150px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  #post .img_wide {
+      max-width: 900px;
+      /* max-height: 500px; */
+  }
+
+  #post .img_text {
+    font-size: 80%;
+  }
 
   #post pre {
     border: 1px solid #ddd;
