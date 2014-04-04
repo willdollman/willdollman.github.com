@@ -183,6 +183,20 @@ ul.posts {
     font-size: 80%;
   }
 
+  /* Add to images with OS X-style drop shadows to remove excess spacing */
+  #post .dropshadow {
+      margin-top: -25px;
+      margin-bottom: -30px;
+  }
+
+  /* Inline pixel-doubled images */
+  /* Not ideal. Text reflow in browsers like Firefox treat images as if full size */
+  #post .img_halfsize {
+      zoom: 50%;
+      -moz-transform: scale(0.5);
+        -o-transform: scale(0.5);
+  }
+
   #post pre {
     border: 1px solid #ddd;
     background-color: #eef;
