@@ -29,15 +29,3 @@ This script will import your photos into iPhoto, where they'll be uploaded to yo
 
 You can also find the source for the Automator script [on my github page][github-applescripts].
 [github-applescripts]: https://github.com/willdollman/applescripts
-
-<html>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Bottombox -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-1012830381826198"
-     data-ad-slot="5452983266"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</html>
