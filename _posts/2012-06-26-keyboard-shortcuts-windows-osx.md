@@ -31,8 +31,7 @@ I think this is the reason you should try and avoid too many tweaks like this: i
 
 As a final bonus, it's also far more comfortable than using ctrl or cmd if you're hitting those shortcuts all day - Caps Lock is simply in a more natural position. No hand contortion here.
 
-[<img  alt="Not such a bad guy after all" src="/images/2012-06-26-goodcaps-thumb.jpg" style="display:block; margin-left:auto; margin-right:auto;">][goodcaps]
-[goodcaps]: /images/2012-06-26-goodcaps-full.jpg
+<img  alt="Not such a bad guy after all" src="/images/2012-06-26-goodcaps-thumb.jpg" style="display:block; margin-left:auto; margin-right:auto;">
 <center style="margin-top:15px;">Maybe you're not such a bad guy after all, Caps Lock.</center>
 
 
