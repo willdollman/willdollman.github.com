@@ -5,13 +5,14 @@ title: USB Battery Packs
 
 Let's talk USB battery packs. Essentially, you've got a lithium ion battery hooked up to a USB port. This is awesome because USB charging is pretty much ubiquitous, and for everything that does charge over it, you never need to worry about running out of battery again.
 
-<a href="/images/20131003-usb_devices_pile.jpg"><img alt="A stack of devices which charge over USB" src="/images/20131003-usb_devices_pile.jpg" style="display:block; margin-left: auto; margin-right:auto; margin-top: 10px; margin-bottom: 20px;" width="600"></a>
-
 Batteries are always too small. The one-device trend doesn't help, with phones replacing multiple gadgets which had their own batteries - if your camera's battery ran out, you should still make phone calls. While the convenience of the consolidation far outweighs the problems, phone batteries are just not big enough. They're getting better, more due to reductions in chipset power consumption than better batteries, but a brand new iOS or Android phone still won't last a full day of GPS, gaming and photo taking.
 
-<a href="/images/20131004-old_devices.jpg"><img alt="Old devices" src="/images/20131004-old_devices.jpg" style="display:block; margin-left: auto; margin-right:auto; margin-top: 10px; margin-bottom: 20px;" width="600"></a>
-
 As a result, a USB port attached to a big battery is remarkably useful, both for a long day or when you're away from a wall socket for multiple days. Surprisingly, they're also really convenient when you want to use your phone around the house while it's charging. 
+
+<div class="img_wrap">
+  <img class="img_wide" src="/images/20131003-usb_devices_pile.jpg">
+  <div class="img_text">Everything charges over USB</div>
+</div>
 
 There are a load of different models out there, but I'm not going to recommend one or another. The only real design consideration you should make is to get one can be charged over micro-USB, saving the need for a propriatory cable. If you have a newer iPhone, a micro-USB lightning adaptor is useful as you can charge pretty much anything with the one cable. 
 
