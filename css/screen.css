@@ -269,6 +269,11 @@ ul.posts {
     margin-bottom: 50px;
   }
 
+.back-home {
+  margin-bottom: 20px;
+  margin-top: -1em;
+}
+
 #related {
   margin-top: 2em;
 }
