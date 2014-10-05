@@ -269,6 +269,11 @@ ul.posts {
     margin-bottom: 50px;
   }
 
+  /* Squash line-height inflating footnote */
+  sup[id*='fnref:'] {
+      line-height: 0em;
+  }
+
 .back-home {
   margin-bottom: 20px;
   margin-top: -1em;
