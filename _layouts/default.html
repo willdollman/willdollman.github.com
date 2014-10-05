@@ -16,27 +16,23 @@
 
 </head>
 <body>
+<div class="wrapper">
+  <div class="colour_bar"></div>
 
-<div class="site">
-  <div class="title">
-    <a href="/">will.dollman.org</a>
-  </div>
+  <div class="site">
   
-  {{ content }}
+    {{ content }}
   
-  <div class="footer">
-    <div class="contact">
-      <p>
-        <a href="http://dollman.org/">Main site</a><br />
-      </p>
-    </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/willdollman/">github.com/willdollman</a><br />
-      </p>
-    </div>
   </div>
-</div>
+
+  <div class="endpage">
+    <div class="footer">
+      &copy; Will Dollman 2012-{{ 'now' | date: "%Y" }}
+    </div>
+    <div class="colour_bar"></div>
+  </div>
+
+</div> <!-- wrapper -->
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
