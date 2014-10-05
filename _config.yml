@@ -1,3 +1,4 @@
 highlighter: pygments
 permalink: /:year/:month/:day/:title
+markdown: kramdown
 #lsi: true
