@@ -83,6 +83,7 @@ ul.posts {
   width: 640px;
   margin: 3em auto auto auto;
   line-height: 1.7em;
+  padding-bottom: 40px;
 }
 
 .title {
@@ -167,17 +168,20 @@ ul.posts {
 /*
 /*****************************************************************************/
 
-#post {
+.post {
 
 }
 
   /* standard */
 
-  #post #title {
+  .post .post-title {
     font-size: 27px;
+    text-decoration: none;
+    font-color: black;
+    color: inherit;
   }
 
-  #post .img_wrap {
+  .post .img_wrap {
     width: 900px;
     text-align: center;
     margin-left: -130px;
@@ -185,7 +189,8 @@ ul.posts {
     margin-bottom: 5px;
   }
 
-  #post .img_high {
+  /* Use for really tall images, that would otherwise be very vertical */
+  .post .img_high {
       max-height: 400px;
       max-width: 900px;
       margin-left: 5px;
@@ -194,68 +199,74 @@ ul.posts {
   }
 
   /* Use for standard images that are regular width */
-  #post .img_standard {
+  .post .img_standard {
       max-width: 600px;
       margin-left: 5px;
       margin-right: 5px;
   }
 
-  #post .img_wide {
+  /* Use for normal images - flow over the sides of the text column */
+  .post .img_wide {
       max-height: 1000px;
       max-width: 900px;
       /* max-height: 500px; */
   }
 
-  #post .img_text {
+  .post .img_text {
     font-size: 80%;
   }
 
   /* Add to images with OS X-style drop shadows to remove excess spacing */
-  #post .dropshadow {
+  .post .dropshadow {
       margin-top: -25px;
       margin-bottom: -30px;
   }
 
   /* Inline pixel-doubled images */
   /* Not ideal. Text reflow in browsers like Firefox treat images as if full size */
-  #post .img_halfsize {
+  .post .img_halfsize {
       zoom: 50%;
       -moz-transform: scale(0.5);
         -o-transform: scale(0.5);
   }
 
-  #post pre {
+  .post pre {
     border: 1px solid #ddd;
     background-color: #eef;
     padding: 0 .4em;
   }
 
-  #post ul,
-  #post ol {
+  .post ul,
+  .post ol {
     margin-left: 1.35em;
   }
 
-  #post code {
+  .post code {
     border: 1px solid #ddd;
     background-color: #eef;
     font-size: 85%;
     padding: 0 .2em;
   }
 
-    #post pre code {
-      border: none;
-    }
+  .post pre code {
+    border: none;
+  }
 
   /* terminal */
 
-  #post pre.terminal {
+  .post pre.terminal {
     border: 1px solid black;
     background-color: #333;
     color: white;
   }
 
-  #post pre.terminal code {
+  .post pre.terminal code {
     background-color: #333;
+  }
+
+  /* Post is in a list, and needs a spacer at the bottom*/
+  .post-list {
+    margin-bottom: 50px;
   }
 
 #related {
