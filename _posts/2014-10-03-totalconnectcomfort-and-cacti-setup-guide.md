@@ -4,7 +4,7 @@ title: Setup guide - Honeywell Total Connect Comfort + Cacti
 ---
 
 <div class="img_wrap">
-  <img class="img_wide" style="width: 500px" src="/images/20141003-wills_room_graph.png">
+  <img class="img_wide" src="/images/20141003-wills_room_graph.png">
 </div>
 
 <center style="margin-top: 15px;">
@@ -34,19 +34,19 @@ You'll want to customise the Data Input Method and Data Template that they match
 Then finally, you can go to New Graphs and start setting up graphs. For that graphs that are per-room, you should edit them by going to Graph Management so that the data sources match the rooms.
 
 <div class="img_wrap">
-  <img class="img_wide" style="width: 667px" src="/images/20141003-cacti_change_data_source.png">
+  <img class="img_standard" src="/images/20141003-cacti_change_data_source.png">
 </div>
 
 After a few minutes of gather data, you should have some cool graphs!
 
 <div class="img_wrap">
-  <img class="img_wide" style="width: 667px" src="/images/20141003-cacti_all_graphs.png">
+  <img class="img_standard" src="/images/20141003-cacti_all_graphs.png">
 </div>
 
 You also get a neat historical view.
 
 <div class="img_wrap">
-  <img class="img_wide" style="width: 500px" src="/images/20141003-cacti_historical.png">
+  <img class="img_standard" src="/images/20141003-cacti_historical.png">
   <div class="img_text">Mind the gap - we had a few network issues!</div>
  
 </div>
