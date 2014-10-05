@@ -11,6 +11,7 @@ Windows
 -------
 
 You'll need to install the [iCloud Control Panel][icloud-windows]. Once you do, you'll have a 'Photo Stream' folder in My Photos, and anything that gets dropped in there is uploaded.
+
 [icloud-windows]: http://www.apple.com/uk/icloud/setup/pc.html
 
 All you need to do in Lightroom is create an export preset that exports your photos as JPGs to this folder, and they'll show up on your other devices. Simple!
@@ -28,4 +29,5 @@ Lightroom lets you run a program after the export, in the "Post-Processing" step
 This script will import your photos into iPhoto, where they'll be uploaded to your Photo Stream and appear on your devices. The Photo Stream agent uploads even while iPhoto is closed, so there's no need to keep it open.
 
 You can also find the source for the Automator script [on my github page][github-applescripts].
+
 [github-applescripts]: https://github.com/willdollman/applescripts

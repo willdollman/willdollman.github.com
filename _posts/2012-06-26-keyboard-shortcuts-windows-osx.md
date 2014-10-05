@@ -7,6 +7,7 @@ I use OS X at home and Windows at work. I'm happy switching between the two, but
 
 In Windows, the key you hit with your shortcuts is ctrl, ([usually][ctrlfnkey]) found in the leftmost, bottommost corner of a keyboard. In OS X though, you've got the cmd key - just to the left of the space bar.
 Getting used to one or the other is not a problem, but using both every day always finds me wondering - briefly - why nothing's happening. Oh right, not that key, the other one.
+
 [ctrlfnkey]: /images/2012-06-26-ctrl-corner.jpg
 
 
@@ -22,6 +23,7 @@ Making this change on a Mac is dead easy: hit up System Preferences -> Keyboard 
 <img alt="Modifying Modifier Keys" src="/images/2012-06-26-osx_modifier_keys.png" style="display:block; margin-left:auto; margin-right:auto;">
 
 Under Windows, remapping Caps Lock to ctrl is not quite so straightforward. I used [SharpKeys][sharpkeys] which modifies the registry to remap keys (also useful for remapping media keys if they're not detected by Windows *coughAppleKeyboardcough*).
+
 [sharpkeys]: http://sharpkeys.codeplex.com/
 
 Over-tweaking
