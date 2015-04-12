@@ -22,13 +22,15 @@ Then we need to set up the data grabbing script by copying it into place:
     mkdir /var/lib/cacti/scripts/TotalConnectComfort
     cp -r Device/ /var/lib/cacti/scripts/TotalConnectComfort
     cp -r cacti-scripts/temperature.pl /var/lib/cacti/scripts/TotalConnectComfort
+    
+    Note - the directories will be different in other OSes - on Ubuntu it'll be something along the lines of /var/lib/cacti/something/scripts
 
 If you're copying the `Device::TotalConnectComfort` module from source (rather than installing from CPAN), you'll also need to install its dependencies. Install gcc and openssl-devel/libssl-dev using your package manager, then install cpanm and necessary modules with:
 
     curl -L http://cpanmin.us | perl - --sudo App::cpanminus
     cpanm JSON JSON::XS LWP::UserAgent LWP::Protocol::https
 
-Ok, we've done all the grunt work. Now we need to make the pretty graphs. Import the templates into Cacti via "Import Tempaltes" (make sure you choose to "Use custom RRA settings from the template").
+Ok, we've done all the grunt work. Now we need to make the pretty graphs. Import all four templates into Cacti via "Import Templates" (make sure you choose to "Use custom RRA settings from the template").
 You'll want to customise the Data Input Method and Data Template that they match the room names in your home.
 
 Then finally, you can go to New Graphs and start setting up graphs. For that graphs that are per-room, you should edit them by going to Graph Management so that the data sources match the rooms.
