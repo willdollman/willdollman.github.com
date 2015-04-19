@@ -232,7 +232,7 @@ ul.posts {
 
   .post pre {
     border: 1px solid #ddd;
-    background-color: #eef;
+    background-color: #EDEDED;
     padding: 0 .4em;
   }
 
@@ -243,9 +243,10 @@ ul.posts {
 
   .post code {
     border: 1px solid #ddd;
-    background-color: #eef;
+    background-color: #EDEDED;
     font-size: 85%;
     padding: 0 .2em;
+    word-wrap: break-word;
   }
 
   .post pre code {
