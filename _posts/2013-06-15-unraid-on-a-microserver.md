@@ -24,7 +24,10 @@ I don't want to regurgitate the [unRAID wiki] [unraid-wiki] in this post - the d
 
 The web UI problem is pretty easy to solve with a plugin called [SimpleFeatures] [simplefeatures-gcode]. 
 It changes the stock interface into this, as well as adding a handful of other features which integrate well into the web interface. 
-<a href="/images/2013-06-15-unraid_simplefeatures.png"><img alt="SimpleFeatures interface" src="/images/2013-06-15-unraid_simplefeatures.png" style="display:block; margin-left:auto; margin-right:auto;" width="500"></a>
+
+<div class="img_wrap">
+  <img class="img_standard" src="/images/2013-06-15-unraid_simplefeatures.png"/>
+</div>
 
 [simplefeatures-gcode]: https://code.google.com/p/unraid-simplefeatures/
 

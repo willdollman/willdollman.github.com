@@ -22,10 +22,17 @@ OS X
 Not quite so simple.
 
 As with Windows, we want an export preset in Lightroom that exports JPGs to a folder - this time though, we don't care where it puts then.
-<a href="/images/2013-06-16-lightroom_export_presets.png"><img alt="Lightroom Export Presets" src="/images/2013-06-16-lightroom_export_presets.png" style="display:block; margin-left: auto; margin-right:auto; margin-top: 10px; margin-bottom: 10px;" width="600"></a>
+
+<div class="img_wrap">
+  <img class="img_wide dropshadow" src="/images/2013-06-16-lightroom_export_presets.png"/>
+</div>
 
 Lightroom lets you run a program after the export, in the "Post-Processing" step. To get our pictures into Photo Stream, I use an Automator script. Open Automator, and enter the following steps:
-<a href="/images/2013-06-16-folder_to_photostream.png"><img alt="Folder to Photo Stream Automator script" src="/images/2013-06-16-folder_to_photostream.png" style="display:block; margin-left: auto; margin-right:auto; margin-top: 20px; margin-bottom: 10px;" width="500"></a>
+
+<div class="img_wrap">
+  <img class="img_wide" src="/images/2013-06-16-folder_to_photostream.png"/>
+</div>
+
 This script will import your photos into iPhoto, where they'll be uploaded to your Photo Stream and appear on your devices. The Photo Stream agent uploads even while iPhoto is closed, so there's no need to keep it open.
 
 You can also find the source for the Automator script [on my github page][github-applescripts].

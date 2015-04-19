@@ -20,7 +20,7 @@ What doesn't seem to be well known is that there's a way to do this without jail
 In Instruments select iOS in the left panel, and the Energy Diagnostics template. To see what's happening on your phone, hit record. In addition to the standard tools - CPU usage, Network activity - you can see when apps enter and exit running states via the flags at the top of the timeline. For example, Weather wakes up for a few seconds every time you unlock the phone.
 
 <div class="img_wrap">
-  <img class="img_wide dropshadow" style="height: 600px" src="/images/20140404-instruments_record.png">
+  <img class="img_wide dropshadow" style="max-height: 600px" src="/images/20140404-instruments_record.png">
 </div>
 
 More useful than just showing data when you're connected to your laptop is that you can record diagnostics, and later review them in Instruments. Setting your phone up to work with Instruments adds a Developer menu item in Settings. To view the data, reconnect your phone then go to File > Import Logged Data from Device in Instruments.

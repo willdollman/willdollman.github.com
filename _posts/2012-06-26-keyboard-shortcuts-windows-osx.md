@@ -20,7 +20,9 @@ So let's make it work for us by turning it into a giant shortcut key, one that's
 
 Making this change on a Mac is dead easy: hit up System Preferences -> Keyboard -> Modifier Keys, and then remap Caps Lock to cmd.
 
-<img alt="Modifying Modifier Keys" src="/images/2012-06-26-osx_modifier_keys.png" style="display:block; margin-left:auto; margin-right:auto;">
+<div class="img_wrap">
+  <img class="img_standard" src="/images/2012-06-26-osx_modifier_keys.png"/>
+</div>
 
 Under Windows, remapping Caps Lock to ctrl is not quite so straightforward. I used [SharpKeys][sharpkeys] which modifies the registry to remap keys (also useful for remapping media keys if they're not detected by Windows *coughAppleKeyboardcough*).
 
@@ -33,7 +35,7 @@ I think this is the reason you should try and avoid too many tweaks like this: i
 
 As a final bonus, it's also far more comfortable than using ctrl or cmd if you're hitting those shortcuts all day - Caps Lock is simply in a more natural position. No hand contortion here.
 
-<img  alt="Not such a bad guy after all" src="/images/2012-06-26-goodcaps-thumb.jpg" style="display:block; margin-left:auto; margin-right:auto;">
-<center style="margin-top:15px;">Maybe you're not such a bad guy after all, Caps Lock.</center>
-
-
+<div class="img_wrap">
+  <img class="img_wide" src="/images/2012-06-26-goodcaps-thumb.jpg"/>
+  <center style="margin-top:15px;">Maybe you're not such a bad guy after all, Caps Lock.</center>
+</div>
