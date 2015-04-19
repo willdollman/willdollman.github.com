@@ -10,7 +10,7 @@ The latest foray our house has made into thing that are (unnecessarily) connecte
 It's controls your central heating with electronic valves on each radiator, which each talk wirelessly to a base unit. Each valve has a thermometer, which means that every room can be set to a different temperature, and the system can be smart and learn how fast each room warms up.
 
 <div class="img_wrap">
-  <img class="img_wide" src="/images/20141002-honeywell_base.jpg">
+  <img class="img_wide" src="/images/20141002-honeywell_base-900.jpg">
 </div>
 
 The intelligent per-room monitoring is the useful part of the system, and the part that will actually save you money. As it is with the Internet of Things though, if it can have an iPhone app... well, let's just say you can change the temperature of your bathroom while sitting on a beach if your book isn't holding your attention.
