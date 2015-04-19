@@ -211,7 +211,6 @@ ul.posts {
   .post .img_wide {
       max-height: 1000px;
       max-width: 900px;
-      width: 100%;
       /* max-height: 500px; */
   }
 
@@ -302,7 +301,6 @@ ul.posts {
   .post .img_wide {
       max-height: 1000px;
       max-width: 100%;
-      width: 100%;
       /* max-height: 500px; */
   }
 }
@@ -320,8 +318,7 @@ ul.posts {
 
   .post .img_wide {
       max-height: 1000px;
-      max-width: 900px;
-      width: 100%;
+      max-width: 100%;
   }
 
   .post .img_standard {
