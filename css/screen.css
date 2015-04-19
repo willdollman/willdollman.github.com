@@ -80,10 +80,12 @@ ul.posts {
 
 .site {
   text-align: justify;
-  width: 640px;
+  max-width: 640px;
   margin: 3em auto auto auto;
   line-height: 1.7em;
   padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .title {
@@ -209,6 +211,7 @@ ul.posts {
   .post .img_wide {
       max-height: 1000px;
       max-width: 900px;
+      width: 100%;
       /* max-height: 500px; */
   }
 
@@ -284,6 +287,46 @@ ul.posts {
   margin-top: 2em;
 }
 
-  #related h2 {
-    margin-bottom: 1em;
+#related h2 {
+  margin-bottom: 1em;
+}
+
+/* Fix image tags for smallish screens */
+@media (max-width: 915px) {
+  .post .img_wrap {
+    width: 100%;
+    margin-left: 0px;
   }
+
+  /* Full-width images */
+  .post .img_wide {
+      max-height: 1000px;
+      max-width: 100%;
+      width: 100%;
+      /* max-height: 500px; */
+  }
+}
+
+/* Fix site width and images for smallish screens */
+@media (max-width: 520px) {
+  .site {
+    width: 350px;
+  }
+
+  .post .img_wrap {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .post .img_wide {
+      max-height: 1000px;
+      max-width: 900px;
+      width: 100%;
+  }
+
+  .post .img_standard {
+      max-width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+}
