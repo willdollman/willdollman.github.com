@@ -4,7 +4,7 @@ title: How to&colon; Make the Kindle a more personal gift
 ---
 
 <div class="img_wrap">
-  <img class="img_wide" src="/images/20150412-boxed-kindle.jpg">
+  <img class="img_wide" src="/images/20150412-boxed-kindle-900.jpg">
 </div>
 
 Something that I always thought was interesting about the Kindle was the unboxing. Instead of a blank-screened device waiting to be turned on, the Kindle arrives with its setup information already on the screen. Displaying static images doesn't require any power on an e-ink screen, so having it display something when you first open it is a nice flourish that puts the screen to good use.
@@ -28,5 +28,5 @@ Voilla! If you're going to store the Kindle for more than a few hours, you'll wa
 If this has inspired you to give someone a Kindle as a gift, it'd be awesome if you bought it <a href="http://www.amazon.com/gp/product/B00JG8H09Q/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00JG8H09Q&linkCode=as2&tag=willdollmanor-20&linkId=QQLMIWYONO3T26TG">using my Amazon referral link</a>.
 
 <div class="img_wrap">
-  <img class="img_wide" src="/images/20150412-prepared-kindle.jpg">
+  <img class="img_wide" src="/images/20150412-prepared-kindle-900.jpg">
 </div>
